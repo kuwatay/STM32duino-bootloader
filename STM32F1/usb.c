@@ -41,17 +41,9 @@ void setupUSB (void) {
 
 #ifdef HAS_MAPLE_HARDWARE	
   /* Setup USB DISC pin as output open drain */	
-<<<<<<< HEAD
-#if defined(TARGET_MAPLE_REV3) || defined(TARGET_MAPLE_REV5) || defined(TARGET_MAPLE_MINI)
-  SET_REG(GPIO_CR(USB_DISC_BANK,USB_DISC),(GET_REG(GPIO_CR(USB_DISC_BANK,USB_DISC)) & crMask(USB_DISC)) | CR_OUTPUT_OD << CR_SHITF(LED_PIN));  
-#else
-  SET_REG(GPIO_CR(USB_DISC_BANK,USB_DISC),(GET_REG(GPIO_CR(USB_DISC_BANK,USB_DISC)) & crMask(USB_DISC)) | CR_OUTPUT_OD << CR_SHITF(USB_DISC));  
-#endif
-  gpio_write_bit(USB_DISC_BANK,USB_DISC,1);
-=======
+
   SET_REG(GPIO_CR(USB_DISC_BANK,USB_DISC_PIN),(GET_REG(GPIO_CR(USB_DISC_BANK,USB_DISC_PIN)) & crMask(USB_DISC_PIN)) | CR_OUTPUT_OD << CR_SHITF(USB_DISC_PIN));  
   gpio_write_bit(USB_DISC_BANK,USB_DISC_PIN,1);
->>>>>>> rogerclarkmelbourne/master
 
   /* turn on the USB clock */
   //pRCC->APB1ENR |= RCC_APB1ENR_USB_CLK;// done in setupCLK()
