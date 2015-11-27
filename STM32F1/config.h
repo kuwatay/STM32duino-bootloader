@@ -270,6 +270,7 @@
 
 	/* USB Disc Pin Setup.   USB DISC is PD3 */
 	#define USB_DISC_BANK           GPIOD
+
 	#define USB_DISC_PIN                3
 
 	/* CRISTAL 12MHz */

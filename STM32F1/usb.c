@@ -41,6 +41,7 @@ void setupUSB (void) {
 
 #ifdef HAS_MAPLE_HARDWARE	
   /* Setup USB DISC pin as output open drain */	
+
   SET_REG(GPIO_CR(USB_DISC_BANK,USB_DISC_PIN),(GET_REG(GPIO_CR(USB_DISC_BANK,USB_DISC_PIN)) & crMask(USB_DISC_PIN)) | CR_OUTPUT_OD << CR_SHITF(USB_DISC_PIN));  
   gpio_write_bit(USB_DISC_BANK,USB_DISC_PIN,1);
 
