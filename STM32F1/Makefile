@@ -126,11 +126,7 @@ generic-pa9: begin gccversion build_generic-pa9 sizeafter finished  copy_generic
 generic-pe5: begin gccversion build_generic-pe5 sizeafter finished  copy_generic-pe5 end
 generic-pe5-button-pa0: begin gccversion build_generic-pe5-button-pa0 sizeafter finished  copy_generic-pe5-button-pa0 end
 generic-pb7: begin gccversion build_generic-pb7 sizeafter finished  copy_generic-pb7 end
-<<<<<<< HEAD
-generic-pb0: begin gccversion build_generic-pb0 sizeafter finished  copy_generic-pe5 end
-=======
 generic-pb0: begin gccversion build_generic-pb0 sizeafter finished  copy_generic-pb0 end
->>>>>>> rogerclarkmelbourne/master
 stbee :  begin gccversion build_stbee sizeafter finished  copy_stbee end
 build: elf bin lss sym
 
