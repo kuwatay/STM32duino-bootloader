@@ -270,11 +270,8 @@
 
 	/* USB Disc Pin Setup.   USB DISC is PD3 */
 	#define USB_DISC_BANK           GPIOD
-<<<<<<< HEAD
-	#define USB_DISC                3
-=======
+
 	#define USB_DISC_PIN                3
->>>>>>> rogerclarkmelbourne/master
 
 	/* CRISTAL 12MHz */
 	#define XTAL12M		1
