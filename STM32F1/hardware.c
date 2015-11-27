@@ -121,15 +121,7 @@ void setupCLK(void) {
     SET_REG(RCC_CFGR, GET_REG(RCC_CFGR) | 0x001D0400); /* pll=72Mhz(x9),APB1=36Mhz,AHB=72Mhz */
 #endif	
 
-<<<<<<< HEAD
-    /* Configure PLL */
-#ifdef XTAL12M
-    SET_REG(RCC_CFGR, GET_REG(RCC_CFGR) | 0x00110400); /* pll=72Mhz(x6),APB1=36Mhz,AHB=72Mhz */
-#else
-    SET_REG(RCC_CFGR, GET_REG(RCC_CFGR) | 0x001D0400); /* pll=72Mhz(x9),APB1=36Mhz,AHB=72Mhz */
-#endif
-=======
->>>>>>> rogerclarkmelbourne/master
+
     SET_REG(RCC_CR, GET_REG(RCC_CR)     | 0x01000000); /* enable the pll */
 	
 
