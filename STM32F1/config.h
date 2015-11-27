@@ -104,7 +104,7 @@
 	
 	/* USB Disc Pin Setup.   USB DISC is PB9 */
 	#define USB_DISC_BANK       GPIOB
-	#define USB_DISC            9
+	#define USB_DISC_PIN            9
 	
 #elif defined TARGET_MAPLE_REV3
 
@@ -123,7 +123,7 @@
 
 	/* USB Disc Pin Setup.   USB DISC is PB9 */
 	#define USB_DISC_BANK         GPIOB
-	#define USB_DISC              9
+	#define USB_DISC_PIN              9
 	
 #elif defined TARGET_MAPLE_REV5
 
@@ -140,7 +140,7 @@
 
 	/* USB Disc Pin Setup.   USB DISC is PB9 */
 	#define USB_DISC_BANK         GPIOB
-	#define USB_DISC              9
+	#define USB_DISC_PIN              9
 	
 #elif defined TARGET_GENERIC_F103_PC13
 	
@@ -270,7 +270,11 @@
 
 	/* USB Disc Pin Setup.   USB DISC is PD3 */
 	#define USB_DISC_BANK           GPIOD
+<<<<<<< HEAD
 	#define USB_DISC                3
+=======
+	#define USB_DISC_PIN                3
+>>>>>>> rogerclarkmelbourne/master
 
 	/* CRISTAL 12MHz */
 	#define XTAL12M		1
